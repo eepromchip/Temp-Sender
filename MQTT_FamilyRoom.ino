@@ -41,7 +41,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   dht.begin();
   setup_wifi();
   client.setServer(mqtt_server, 1883);
