@@ -32,16 +32,16 @@ DHT dht(DHTPIN, DHTTYPE);
 //#define mqtt_user "user"
 //#define mqtt_password "password"
 
-#define humidity_topic "myhome/groundfloor/FR/humidity"
-#define temperature_celsius_topic "myhome/groundfloor/FR/temperature_celsius"
-#define temperature_fahrenheit_topic "myhome/groundfloor/FR/temperature_fahrenheit"
-#define failure "myhome/groundfloor/FR/failed"
+#define humidity_topic "1floor/FR/humidity"
+#define temperature_celsius_topic "1floor/FR/temperature_celsius"
+#define temperature_fahrenheit_topic "1floor/FR/temperature_fahrenheit"
+#define failure "1floor/FR/failed"
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   dht.begin();
   setup_wifi();
   client.setServer(mqtt_server, 1883);
