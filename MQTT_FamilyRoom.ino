@@ -4,7 +4,7 @@
 
 #include "DHT.h"
 
-#define DHTPIN 2 // what digital pin we're connected to ESP-01 board (GPIO2)
+#define DHTPIN 0 // what digital pin we're connected to ESP-01 board (GPIO2)
 
 // Uncomment whatever type you're using!
 #define DHTTYPE DHT11 // DHT 11
