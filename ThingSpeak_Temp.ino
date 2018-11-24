@@ -32,18 +32,7 @@ void setup()
   connectWifi();
 
   Serial.println("Connected to wifi");
-  digitalWrite (LED, HIGH); // Making LED High.
-    delay(100);              // Some Delay
-    digitalWrite (LED, LOW);  // Making LED LOW.
-    delay(100);              // Some Delay
-    digitalWrite (LED, HIGH); // Making LED High.
-      delay(100);              // Some Delay
-      digitalWrite (LED, LOW);  // Making LED LOW.
-      delay(100);
-      digitalWrite (LED, HIGH); // Making LED High.
-        delay(100);              // Some Delay
-        digitalWrite (LED, LOW);  // Making LED LOW.
-        delay(100);
+
   ThingSpeak.begin(client);
 }
 
@@ -90,5 +79,5 @@ void updateDHT()
   digitalWrite (LED, HIGH); // Making LED High.
     delay(100);              // Some Delay
     digitalWrite (LED, LOW);  // Making LED LOW.
-    delay(100); 
+    delay(100);
 }
